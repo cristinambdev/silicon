@@ -36,6 +36,11 @@ body {
   font-family: "Manrope", sans-serif;
 
 }
+.wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+}
 
 .container {
   width: 100%;
@@ -393,105 +398,6 @@ header .container {
 
 }
 
-/*.section-one {
-  width: 100%;
-  border: 1px solid red;
-  background: linear-gradient(to bottom, #ffffff, #f6f5fa, #efeaf5, #e8e0ef, #e2d5e9);
-  padding-left: 1rem;
-  padding-right: 1rem;
-  justify-content: center;
-  display: grid;
-  grid-template-rows: repeat(5, auto);
-  grid-template-columns: auto;
-  grid-template-areas: 
-  "title"
-  "text"
-  "market-buttons"
-  "dropdown-info"
-  "section-one-phones";
-
-.title {grid-area: title;}
-.text { grid-area: text; }
-.market-buttons { grid-area: market-buttons; }
-.dropdown-info { grid-area: dropdown-info; }
-.section-one-phones { grid-area: section-one-phones; }
-}
-
-
-.section-one .title h1{
-  border: 1px solid blue;
-  color: var(--color-h1);
-  font-weight: 900;
-  font-size: var(--size-H2);
-  line-height: 2.2rem;
-  text-align: center;
-  padding-top: 2rem;
-}
-
-.section-one .text p {
-  border: 1px solid green;
-  font-size: var(--size-text-small);
-  color: var(--color-text);
-  text-align: center;
-  padding-top: 2rem;
-}
-
-.market-buttons {
-  border: 1px solid purple;
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 1rem;
-  justify-content: center;
-}
-
-.market-buttons img{
-  width: 100%;
-  padding-top: 1rem;
-
-}
-
-.dropdown-info {
-  border: 1px solid white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.4rem;
-  color: var(--color-text);
-  font-size: var(--size--text-small);
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.section-one-phones{
-  border: 1px solid purple;
-  display: flex
-}
-
-.section-one-phones img {
-  max-width: inherit;
-  max-height: inherit;
-  height: inherit;
-  width: inherit;
-  object-fit: cover;
-}
-
-.phone-top {
-  position: relative ;
-  width: 100%;
-  right: 2rem;
-  top: 5rem;
-  z-index: 3;
- 
-}
-
-.phone-bottom {
-  position: relative;
-  left: -15px;
-  top: 6.5rem;
-  z-index: 1;
-}
-
-
 
     /*SECTION 2*/
 
@@ -533,13 +439,29 @@ container-logos img {
 
 }
 
-footer{
+footer {
     /*border: 1px solid orange;*/
-    bottom: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     font-size: 14px;
-    color: #9397AD;
-    width: inherit;
-    text-align: center;
+    color: var(--color-gray);
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.4rem;
+     
+    }
+
+    .credit {
+      display:none;
+      
+      @media (min-width: 768px) {
+        display: block;  
+      }
+    }
+    
   }
 
  
