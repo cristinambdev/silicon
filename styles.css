@@ -7,6 +7,8 @@
   --color-white:#FFFFFF;
   --color-h1: #131022;
   --color-text: #585C7B;
+  --color-border-gray: #E2E5F1;
+
 
     /*font-size*/
 
@@ -198,40 +200,8 @@ header .container {
     border-radius: 50%;
   }  
 
-@media (min-width: 768px) { 
-  .container {
-    max-width: 720px;
-    gap: 3rem;
-  }
 
-  .mode-toggle .label {
-    display: block; 
-  }
-
-}
-
-@media (min-width: 1400px) { 
-  .container {
-    max-width: 1320px;
-  }
-
-  header .container {
-    grid-template-columns: auto 1fr auto auto;
-    gap: 3rem;
-  }
-  .navbar {
-    display: block;
-  }
-
-  .signIn-btn {
-    display: block;
-  }
-
-  .mobile-btn {
-    display: none;
-  }
-}
-/* section 1*/
+/* SECTION HERO*/
 
 .hero {
   /*border: 1px solid yellow;*/
@@ -270,10 +240,11 @@ header .container {
 
     h1 {
       font-size: 2.2rem;
-      font-weight: 800;      
+      font-weight: 800;   
+      margin-bottom: 2rem;   
 
       @media (min-width: 1400px) {
-        
+        font-size: 2.5rem;
         text-align: left;
         padding-top: 3rem;
         margin-bottom: 0;
@@ -297,14 +268,16 @@ header .container {
     }
 
       p {
-        font-size: 1rem;
-         margin: 1rem 0;
-         line-height: 1.5rem ;
+         font-size: 1.2rem;
+         line-height: 1.8rem ;
+         padding-bottom: 2rem;
+        }
       }
 
-      p span {
+      span {
         @media (min-width: 768px) {
           display: block;
+
         }
       } 
      
@@ -371,7 +344,7 @@ header .container {
       position: absolute;
       z-index: 1;
       bottom:0;
-      right: 140px;
+      right: 130px;
       width: 70%;
 
       @media (min-width: 1400px) {
@@ -396,49 +369,83 @@ header .container {
         
   }
 
-}
-
-
     /*SECTION 2*/
 
-.container-logos {
- display: flex;
- align-items: center;
- justify-content: space-between;
- padding: 2rem;
+#brands {
+  display:none;
+  padding: 2rem 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
 }
 
-container-logos img {
-  border: 1px dotted grey;
-  padding: 1rem;
+.brand-box {
+  border: 1px solid var(--color-border-gray);
+  border-radius: 8px;
+  height: 100px;
+  width: 200px;
   display: flex;
-}
-
-.features-decription {
-  display: flex;
-  border: 1px solid green;
-  padding: 2rem 8rem;
-}
-
-.phone-section2 {
-  position: relative;
-  right: -1rem;
-  top: 4rem;
-  z-index: 1;
-  object-fit: fill;
-  background: transparent;
-}
-
-.card-section2 {
-  position: relative;
-  left: 2rem;
-  bottom: 33rem;
-  z-index: 2;
-  object-fit: fill;
-  background: transparent;
+  justify-content: center;
+  align-items: center;
 
 }
 
+ /*Media queries header and brands */
+
+@media (min-width: 768px) { 
+  .container {
+    max-width: 720px;
+    gap: 3rem;
+  }
+
+  .mode-toggle .label {
+    display: block; 
+  }
+
+  #brands {
+    display: block;
+
+  
+}
+
+  #brand-3, #brand-6 {
+  display: none;
+}
+
+}
+
+@media (min-width: 1400px) { 
+  .container {
+    max-width: 1320px;
+  }
+
+  header .container {
+    grid-template-columns: auto 1fr auto auto;
+    gap: 3rem;
+  }
+  .navbar {
+    display: block;
+  }
+
+  .signIn-btn {
+    display: block;
+  }
+
+  .mobile-btn {
+    display: none;
+  }
+
+  #brand-3, #brand-6 {
+    display: flex;
+  }
+}
+
+
+/*FOOTER*/
 footer {
     /*border: 1px solid orange;*/
     padding-top: 1rem;
@@ -451,7 +458,6 @@ footer {
       justify-content: center;
       align-items: center;
       gap: 0.4rem;
-     
     }
 
     .credit {
