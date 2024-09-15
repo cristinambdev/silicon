@@ -11,8 +11,8 @@
 
 
     /*font-size*/
-
   --size-display4: 56px;
+  --size-display5: 52px,
   --size-display6: 42px;
   --size-H1: 40px;
   --size-H2:32px;
@@ -20,6 +20,7 @@
   --size-H4:24px
   --size-H5:20px;
   --size-text-big: 18px;
+  --size-text-medium:16px;
   --size--text-small: 14px;
 
 
@@ -324,7 +325,7 @@ header .container {
           }
 
         span {
-          font-size: .8rem;
+          font-size: 1rem;
         }
       }
 
@@ -391,7 +392,6 @@ header .container {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
  /*Media queries header and brands */
@@ -444,13 +444,108 @@ header .container {
   }
 }
 
+/*SECTION APP-FEATURES*/
+.app-features .container {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  
+  @media (min-width: 1400px) { 
+    display: flex;
+    gap: 14rem;
+  }
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 2rem;
+
+
+    h3 {
+      font-size: var(--size-H3);
+      color: var(--color-h1);
+      font-weight: 900;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size:var(--size-text-big);
+      line-height: 1.6rem;
+      color: var(--color-text);
+    }
+
+    @media (min-width: 1400px) { 
+      
+      text-align: left;
+
+      h3 {
+        font-size: var(--size-H1);
+      }
+
+      p {
+        color: var(--color-gray);
+        margin-bottom: 3rem;
+      }
+    }
+}
+
+.items {
+  @media (min-width: 768px) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3rem;
+}
+  
+}
+
+.features {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 1.3rem;
+
+    h5 {
+      color: var(--color-h1);
+      font-size: var(--size-H5);
+      font-weight: 900;
+      margin-top: 0.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: var(--size-text-medium);
+      line-height: 1.6rem;
+      color: var(--color-text);
+    }
+}
+
+
+
+.phone-yourcards {
+  display: none;
+  position: relative;
+
+  @media (min-width: 1400px) { 
+      display: flex;
+    }
+
+}
+
+.credit-card {
+  position: absolute;
+  left: 30px;
+  bottom: 320px;
+}
+
+
 
 /*FOOTER*/
 footer {
     /*border: 1px solid orange;*/
     padding-top: 1rem;
     padding-bottom: 1rem;
-    font-size: 14px;
+    font-size: var(--size--text-small);
     color: var(--color-gray);
 
     .container {
