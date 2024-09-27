@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Silicon</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,13 +31,14 @@
                     </label>
                 </div>
 
-                <a class="signIn-btn">
-                    <img class="icon-sign-btn" src="images light version\icon-singIn_button.svg" alt="icon person">
+                <a class="btn-primary">
+                    <img class="icon-btn-primary" src="images light version\icon-singIn_button.svg" alt="icon person">
                     Sign in / up
                 </a>
 
-                <button class="mobile-btn">
+                <a class="mobile-btn">
                     <img class="icon-menu" src="images light version\Button - Toggle navigation.svg" alt="icon">                </button>     
+                </a>
             </div>
     </header>
 <main>
@@ -190,9 +191,9 @@
         <h2 class="explanation-headline">How Does it Work?</h2>
         <div class="caroussel">
             <div class="caroussel-mobile">
-                <img class="caroussel-frame" src="images light version\caroussel_tablet_phoneFrame.svg" alt="">
+
                 <img class="caroussel-phoneTwo" src="images light version\caroussel_tablet_phone2.svg" alt="">
-                
+
                 <div class="text-explanation" id="text-mobile">
                     <h4>Transfers to people from your contact list</h4>
                     <p>Proin volutpat mollis egestas. Nam luctus facilisis
@@ -204,7 +205,6 @@
             <div class="caroussel-tablet">
                 
                 <img class="caroussel-1" src="images light version\caroussel_tablet_phone1.svg" alt="">
-                <img class="caroussel-frame" src="images light version\caroussel_tablet_phoneFrame.svg" alt="">
                 <img class="caroussel-2" src="images light version\caroussel_tablet_phone2.svg" alt="">
                 <img class="caroussel-3" src="images light version\caroussel_tablet_phone3.svg" alt="">
                
@@ -235,60 +235,236 @@
 
 </section>
 
+<!--SECTION DETAILED EXPLANATION-->
+
 <section class="detailed-explanation">
     <div class="container">
-        <div class="top-explanation">
+        
+        <div class="left-explanation">
             
             <div class="text-top">
-                <h3>Make your money <span>transfer simple and clear</span></h3>
+                <h3>Make your money <br>transfer simple and clear</h3>
                 <ul>
                     <li>
-                        Banking transactions are free for you 
+                        <p><img class="check" src="images light version\bx-check-circle.svg" alt=""> Banking transactions are free for you </p> 
                     </li>
+                        
                     <li>
-                        No monthly cash commission
+                        <p><img class="check" src="images light version\bx-check-circle.svg" alt=""> No monthly cash commission</p>
                     </li>                        
                     <li>
-                        Manage payments and transactions online   
+                        <p><img class="check" src="images light version\bx-check-circle.svg" alt=""> Manage payments and transactions online</p>
                     </li>                     
                 </ul>
-                <button class="signIn-btn">
+                <a class="btn-primary learn-more">
                     Learn more
-                    <img class="icon-sign-btn" src="images light version\Vecto_arrowr.svg" alt="icon person">
-                </button>
+                    <img class="icon-btn-primary" src="images light version\Vector_arrow.svg" alt="icon person">
+                </a>
             </div>
-            <div class="september-forecast-img">
-                <img src="images light version\detailed_explanation_top_picture.svg" alt="">
-            </div>
-
-    <div class="bottom-explanation">
-        <div class="september-forecast-img"></div>
+            <div class="contacts-img">
                 <img src="images light version\detailed_explanation_bottom_img.svg" alt="">
         </div>
-
-        <div class="text-bottom">
-            <h3>Receive payment from international bank details</h3>
-            <div class="content-bottom">
-                <div class="content-left">
-                    <img src="images light version\vektor_creditcard.svg" alt="">
-                    <p>Manage your payments online. Mollis congue egestas egestas fermentum fames.</p>
-                    <button class="signIn-btn">
-                        Learn more
-                        <img class="icon-sign-btn" src="images light version\Vecto_arrowr.svg" alt="icon person">
-                    </button>
-                </div>
-                
-                <div class="content-right">
-                    <img src="images light version\vektor_cashback.svg" alt="">
-                    <p>A elementur and imperdiet enim, pretium etiam facilisi aenean quam mauris.</p>
-                </div>
-            </div>
-        </div>
-
+           
     </div>
+    
+    <div class="right-explanation">
+        <div class="september-forecast-img">
+            <img src="images light version\detailed_explanation_top_picture.svg" alt="">
+        </div>
+        <div class="heading">
+            <h3>Receive payment from international bank details</h3>
+        </div>
+        
+        <div class="content-left">
+            <img src="images light version\vektor_creditcard.svg" alt="">
+            <p>Manage your payments online. Mollis congue egestas egestas fermentum fames.</p>
+            <a class="btn-primary learn-more">
+                <p>Learn more</p>
+                <img class="icon-btn-primary" src="images light version\Vector_arrow.svg" alt="icon person">
+            </a>
+        </div>
+        <div class="content-right">
+            <img src="images light version\vektor_cashback.svg" alt="">
+            <p>A elem  entur and imperdiet enim, pretium etiam facilisi aenean quam mauris.</p>
+        </div>
+    </div>    
 </div>
 
 </section>
+
+ <!--REVIEWS-->
+ <section class="reviews">
+    <div class="container">
+        <div class="heading">
+            <h3>Clients are Loving Our App</h3>
+        </div>
+        <div class="review-box">
+                <img class="quotes" src="images light version\quotes.svg" alt="">
+                <img class="rating" src="images light version\rating_Fannie.svg" alt="">
+                <p class="comment">Sit pretium aliquam tempor, orci dolor sed maecenas rutrum sagittis.
+                Laoreet posuere rhoncus, egestas lacus, egestas justo aliquam vel. Nisi vitae lectus hac hendrerit. 
+                Montes justo turpis sit amet.</p>
+                
+            <div class="reviewer">
+                <img class="avatar" src="images light version\avatar_fannie.svg" alt="">
+                <div class="signature">
+                <p class="reviewer-name">Fannie Summers
+                <p class="reviewer-job">Designer</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="review-box">
+            <img class="quotes" src="images light version\quotes.svg" alt="">
+            <img class="rating" src="images light version\rating_Albert.svg" alt="">
+            <p class="comment">Nunc senectus leo vel venenatis accumsan vestibulum sollicitudin amet 
+                porttitor. Nisl bibendum nulla tincidunt eu enim ornare dictumst sit amet. 
+                Dictum pretium dolor tincidunt egestas eget nunc.</p>
+            
+        <div class="reviewer">
+            <img class="avatar" src="images light version\avatar_albert.svg" alt="">
+            <div class="signature">
+            <p class="reviewer-name">Albert Flores
+            <p class="reviewer-job">Developer</p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+ </section>
+
+  <!--FAQS-->
+ <section class="faqs">
+    
+    <div class="container">
+
+            <div class="heading">
+                <h2>Any questions?<span> Check out the FAQs</span></h2>
+                <p class="large-text">Still have unanswered questions and need to get in touch?</p>    
+            </div>
+
+        <div class="faqs-accordion">
+
+                 <div class="accordion-item">
+                        <a class="question" href="#">Is any of my personal information stored in the App?
+                            <img class="drop-arrow-purple mobile-active" src="images light version\dropdown-purple.svg" alt="">
+                            <img class="drop-arrow table-desktop-active" src="images light version\download_arrow_faqs.svg" alt="">
+                        </a>
+                    <div class="accordion-answer mobile">
+                        <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et,
+                            cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetrafermentum duis accumsan lectus non. Massa
+                            cursus molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam
+                            tristique tincidunt suspendisse ut consequat.</br> </br> 
+                            Ornare senectus fusce dignissim ut. Integer consequat in eu tortor, faucibus et lacinia
+                            posuere. Turpis sit viverra lorem suspendisse lacus aliquam auctor vulputate. Quis egestas
+                            aliquam nunc purus lacus, elit leo elit facilisi. Dignissim amet adipiscing massa integer.</p>
+                    </div> 
+                </div>
+
+            <div class="accordion-item">
+                <a class="question" href="#">What formats can I download my transaction history in?
+                    <img class="drop-arrow" src="images light version\download_arrow_faqs.svg" alt="">
+                </a>
+                <div class="accordion-answer">
+
+                </div>
+            </div>
+                 
+
+            <div class="accordion-item">
+                <a class="question" href="#">Can I schedule future transfers?
+                    <img class="drop-arrow-purple table-desktop-active" src="images light version\dropdown-purple.svg" alt="">
+                    <img class="drop-arrow mobile-active" src="images light version\download_arrow_faqs.svg" alt="">
+                </a>
+                    
+                <div class="accordion-answer tablet-desktop">
+                    <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, 
+                        cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. 
+                        Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque 
+                        pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, 
+                        duis egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.</p>
+                </div>        
+            </div>
+
+            <div class="accordion-item">
+                <a class="question" href="#">When can I use Banking App services?
+                    <img class="drop-arrow active" src="images light version\download_arrow_faqs.svg" alt="">
+                </a>
+                    
+                <div class="accordion-answer">
+    
+                </div>        
+            </div>
+
+            <div class="accordion-item">
+                <a class="question" href="#">Can I create my own password that is easy for me to remember?
+                    <img class="drop-arrow active" src="images light version\download_arrow_faqs.svg" alt="">
+                </a>
+                    
+                <div class="accordion-answer">
+    
+                </div>        
+            </div>
+
+            <div class="accordion-item">
+                <a class="question" href="#">What happens if I forget or lose my password?
+                    <img class="drop-arrow active" src="images light version\download_arrow_faqs.svg" alt="">
+                </a>
+                    
+                <div class="accordion-answer">
+
+                </div>        
+            </div>
+            
+        </div>
+
+
+        <div class="contact-area">
+
+            <a class="btn-primary">Contact us now</a>
+                
+            <div class="contact-box">
+                <img src="images light version\icon_phone.svg" alt="">
+                <p class="small-text">Still have questions?</p>
+                <a href="#" class="contact-phone">Contact us <img src="images light version\arrow-purple.svg" alt=""></a>
+            </div>
+
+            <div class="contact-box">
+                <img src="images light version\icon_chat.svg" alt="">
+                <p class="small-text">Don't like phone calls?</p>
+                <a href="#" class="contact-chat">Contact us <img src="images light version\arrow_green.svg" alt=""></a>
+            </div>
+
+        </div>
+
+    </div>
+
+ </section>
+
+  <!--SUBSCRIPTION SECTION-->
+  <section class="subscription">
+    <div class="container">
+        <div class="subscription-wrapper">
+            <div class="subscription-heading">
+                <img src="images light version/subscription-icon-1.svg fill.svg" alt="">
+                <h4>Subscribe to our newsletter <span class="desktop-heading"> to stay informed about our latest updates</span></h4>
+            </div>
+
+            <div class="subscription-email-input">
+                <!-- <img clas="subscription-icon" src="alt=""> -->
+                <input type="text" class="email-input" placeholder="Your email">
+                <a href="#" class="btn-primary">Subscribe</a>
+            </div>
+        </div>
+
+
+    </div>
+
+  </section>
+
+
+
 
  <!--FOOTER-->
     <footer>   
