@@ -35,6 +35,8 @@
   box-sizing: border-box;
 }
 
+
+
  /*Typography*/  
 
 li {
@@ -493,8 +495,6 @@ input:checked + .slider {
 
     @media (min-width: 1400px) { 
       
-      text-align: left;
-
       h3 {
         font-size: var(--size-H1);
       }
@@ -949,17 +949,16 @@ input:checked + .slider {
 .subscription-wrapper {
   background-color: #F3F6FF;
   border-radius: 8px;
-  padding: 3rem;
+  padding: 2rem;
   margin-bottom: 1rem;
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
   justify-items: center;
   align-items: center;
   
 
   @media (min-width: 768px) {
     display: flex;
-    gap: 2rem;
     justify-content: center;
     align-items: center;
   }
