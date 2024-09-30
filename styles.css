@@ -44,7 +44,6 @@ li {
 body {
   font-family: "Manrope", sans-serif;
   overflow-x: hidden;
-
 }
 
 .wrapper {
@@ -142,7 +141,7 @@ header .container {
   align-items: center;
 
   .learn-more {
-    align-items: flex-start;
+ 
   }
 
 }
@@ -388,7 +387,7 @@ input:checked + .slider {
         
   }
 
-    /*SECTION 2*/
+    /*SECTION BRANDS*/
 
 #brands {
   display:none;
@@ -565,7 +564,7 @@ input:checked + .slider {
   h2 {
     font-size: var(--size-H2);
     font-weight: 900;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
 
   h4 {
@@ -612,6 +611,13 @@ input:checked + .slider {
   .caroussel .caroussel-desktop {
     display: block;
     gap: 2rem; 
+
+    .img-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 4rem;
+    }
   }
 
   .text-explanation {
@@ -633,7 +639,6 @@ input:checked + .slider {
   padding-top: 8rem;
   padding-left: 7rem;
   margin-bottom: 8rem;
-  /* border: 1px solid red;    */
   justify-content: center;
   
   h3 {
@@ -645,42 +650,49 @@ input:checked + .slider {
     line-height: 1.5rem;
   }
 
+  .learn-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    height: 3rem;
+    gap: 1rem;
+  }
+
   .left-explanation {
-    /* border: 1px solid green; */
     padding-top: 5rem;
     justify-content: center;
 
-    h3 {
-      padding-bottom: 1rem;
-    }
-
-    ul {
-      margin-bottom: 2.5rem;;
-    }
-    
-    li {
-    padding-top: .8rem;    
-    }
-
-    .check {
-      vertical-align: top;
-      padding-right: .6rem;
-    }
-
     .text-top {
       margin-bottom: 10rem;
-    }
 
+      h3 {
+        padding-bottom: 1rem;
+      }
+  
+      ul {
+        margin-bottom: 2.5rem;;
+      }
+      
+      li {
+      padding-top: .8rem;    
+      }
+  
+      .check {
+        vertical-align: top;
+        padding-right: .6rem;
+      }
+
+      
+    }
     
 }
 
   
   .right-explanation {
-    /* border: 1px solid orange; */
     display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr auto auto; 
-    column-gap: 2rem; 
+    grid-template-columns: 1fr 1fr; 
+    column-gap: 3rem; 
     grid-template-areas: 
       "september-forecast-img september-forecast-img ."
       "heading heading ."
@@ -692,6 +704,7 @@ input:checked + .slider {
   }
   .heading { 
     grid-area: heading;  
+    width: 80%;
   }
   .content-left { 
     grid-area: content-left; 
@@ -726,11 +739,9 @@ input:checked + .slider {
   /* border: 1px solid red; */
   display: flex;
   flex-direction: row;
-  padding-top: 5rem;
-  padding-bottom: 7rem;
+  padding-block: 8rem;
 
   .heading {
-    /* border: 1px solid blue; */
     width: 20%;
     margin-right: 4rem;
     
@@ -783,7 +794,6 @@ input:checked + .slider {
 /*FAQS*/
 
 .faqs .container {
-  border: 1px solid red;
   margin-top: 4rem;
   margin-bottom: 4rem;
   display: grid;
@@ -807,7 +817,6 @@ input:checked + .slider {
  .faqs .heading {
     grid-area: heading;
     text-align: center; 
-    border: 1px solid blue;
 
     h4 {
       font-size: var(--size-H4);
@@ -830,13 +839,13 @@ input:checked + .slider {
 
   .faqs-accordion {
     grid-area: faqs-accordion;
-    border: 1px solid green;
 
 
     .accordion-item {
       border: .5px solid var(--color-border-gray);
       border-radius: 8px;
-      padding: 1rem;
+      padding-inline: 1.5rem;
+      padding-block: .8rem;
       align-items: center;
       margin-bottom: 1rem ;
     }
@@ -882,7 +891,6 @@ input:checked + .slider {
     }
 
   .contact-area {
-    border: 1px solid black;
     grid-area: contact-area;
     display: flex;
     gap: 1.5rem;
@@ -894,12 +902,13 @@ input:checked + .slider {
   }
 
   .contact-box {
-    border: 1px solid purple;
     display: none;
     border: .5px solid var(--color-border-gray);
     padding: 1.5rem;
     border-radius: 8px;
     width: 100%;
+    height: 12rem;
+
 
     p {
       margin-top: 1rem;
@@ -909,8 +918,11 @@ input:checked + .slider {
   .contact-phone, .contact-chat {
     font-weight: 700;
     text-decoration: none;
+    display: flex;
     align-items: center;
-    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    gap: 1rem;
     
   }
 
@@ -928,12 +940,7 @@ input:checked + .slider {
 
     @media (min-width: 1400px) {
       display: block;
-
-      .contact-box {
-        
-      }
    }
-
   } 
 }
 
@@ -942,7 +949,7 @@ input:checked + .slider {
 .subscription-wrapper {
   background-color: #F3F6FF;
   border-radius: 8px;
-  padding: 2rem;
+  padding: 3rem;
   margin-bottom: 1rem;
   display: grid;
   gap: 1rem;
